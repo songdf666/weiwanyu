@@ -6,6 +6,8 @@
 
 - `reproduced/`: 从当前工作区同步过来的轻量源码副本。数据、模型权重、运行输出、虚拟环境不会进入该目录。
 - `docs/CODE_INDEX.md`: 已复现代码索引和标注，记录原始路径、用途、入口脚本和当前状态。
+- `docs/PAPER_INDEX.md`: 每个源码目录对应的论文索引、官方链接和本地候选文件。
+- `papers/`: 论文题录说明。默认不提交 PDF 全文。
 - `templates/EXPERIMENT_LOG_TEMPLATE.md`: 单次实验记录模板。
 - `scripts/preprocess_corpus.py`: 语料预处理命令行入口。
 - `src/euphemism_repro/preprocess/`: 可扩展的预处理 Python 包骨架。
