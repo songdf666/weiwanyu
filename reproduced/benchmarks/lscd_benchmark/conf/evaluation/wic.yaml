@@ -1,0 +1,6 @@
+defaults:
+  - plotter: histogram
+  - metric: ???
+
+_target_: src.evaluation.Evaluation
+task: wic

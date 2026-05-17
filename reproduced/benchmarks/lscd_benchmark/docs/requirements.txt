@@ -1,0 +1,6 @@
+sphinx
+sphinxcontrib-mermaid
+myst-parser
+sphinx-book-theme
+sphinx-autoapi
+sphinx-tabs

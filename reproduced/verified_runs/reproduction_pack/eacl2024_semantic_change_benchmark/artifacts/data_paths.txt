@@ -1,0 +1,6 @@
+/Users/sdf/Desktop/论文复现/LSCDBenchmark/wug/nor_dia_change/subset1/data/kjemi/uses.tsv
+/Users/sdf/Desktop/论文复现/LSCDBenchmark/wug/nor_dia_change/subset1/data/egg/uses.tsv
+/Users/sdf/Desktop/论文复现/LSCDBenchmark/wug/nor_dia_change/subset1/data/damp/uses.tsv
+/Users/sdf/Desktop/论文复现/LSCDBenchmark/wug/nor_dia_change/subset1/data/fil/uses.tsv
+/Users/sdf/Desktop/论文复现/LSCDBenchmark/wug/nor_dia_change/subset1/data/plattform/uses.tsv
+/Users/sdf/Desktop/论文复现/LSCDBenchmark/wug/nor_dia_change/subset1/stats/opt/stats_groupings.tsv

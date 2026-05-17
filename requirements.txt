@@ -1,0 +1,3 @@
+# Core framework uses only the Python standard library.
+# Add project-specific dependencies here when a reproduced pipeline is promoted
+# from `reproduced/` into the maintained code path under `src/`.

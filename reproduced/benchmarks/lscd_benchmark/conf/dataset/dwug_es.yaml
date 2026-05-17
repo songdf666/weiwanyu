@@ -1,0 +1,152 @@
+_target_: src.dataset.Dataset
+cleaning: null
+defaults:
+  - _self_
+  - preprocessing: ???
+  - spelling_normalization: ???
+  - split: ???
+exclude_annotators: []
+groupings:
+  - "1"
+  - "2"
+wic_use_pairs:
+  group: ALL
+  sample: annotated
+path: dwug_es
+standard_split:
+  dev: []
+  dev1: []
+  dev2: []
+  full:
+    - abundar
+    - actitud
+    - agradecer
+    - albergar
+    - ataque
+    - atrás
+    - avance
+    - banco
+    - canal
+    - capital
+    - compasión
+    - contingente
+    - corona
+    - corriente
+    - cólera
+    - creciente
+    - declinar
+    - demá
+    - descendiente
+    - distribuir
+    - educado
+    - elocuente
+    - empresa
+    - encargado
+    - especulación
+    - fallecimiento
+    - gracioso
+    - historiador
+    - impulso
+    - instalación
+    - interrogatorio
+    - intolerable
+    - maduro
+    - maravilloso
+    - marco
+    - matiz
+    - metal
+    - modo
+    - mortal
+    - mujer
+    - no
+    - nombramiento
+    - pelear
+    - pila
+    - planta
+    - prima
+    - propiamente
+    - propuesta
+    - quemar
+    - recomendar
+    - recordar
+    - reforma
+    - saludar
+    - servidor
+    - sexo
+    - socialista
+    - solicitud
+    - suposición
+    - susceptible
+    - tablero
+    - tarea
+    - trato
+    - viernes
+    - vuestro
+  test:
+    - abundar
+    - actitud
+    - agradecer
+    - albergar
+    - ataque
+    - atrás
+    - avance
+    - banco
+    - canal
+    - capital
+    - compasión
+    - contingente
+    - corona
+    - corriente
+    - cólera
+    - creciente
+    - declinar
+    - demá
+    - descendiente
+    - distribuir
+    - educado
+    - elocuente
+    - empresa
+    - encargado
+    - especulación
+    - fallecimiento
+    - gracioso
+    - historiador
+    - impulso
+    - instalación
+    - interrogatorio
+    - intolerable
+    - maduro
+    - maravilloso
+    - marco
+    - matiz
+    - metal
+    - modo
+    - mortal
+    - mujer
+    - no
+    - nombramiento
+    - pelear
+    - pila
+    - planta
+    - prima
+    - propiamente
+    - propuesta
+    - quemar
+    - recomendar
+    - recordar
+    - reforma
+    - saludar
+    - servidor
+    - sexo
+    - socialista
+    - solicitud
+    - suposición
+    - susceptible
+    - tablero
+    - tarea
+    - trato
+    - viernes
+    - vuestro
+test_on: null
+type: test
+url: https://zenodo.org/records/6433667/files/dwug_es.zip

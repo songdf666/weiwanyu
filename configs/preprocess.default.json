@@ -1,0 +1,15 @@
+{
+  "input_globs": ["**/*.txt", "**/*.jsonl", "**/*.csv", "**/*.tsv"],
+  "encoding": "utf-8",
+  "text_column": "text",
+  "id_column": null,
+  "period_column": null,
+  "period_regex": "(18|19|20)\\d{2}",
+  "unicode_normalization": "NFKC",
+  "lowercase": false,
+  "strip_urls": true,
+  "collapse_whitespace": true,
+  "min_chars": 1,
+  "tokenize": true,
+  "keep_empty_tokens": false
+}

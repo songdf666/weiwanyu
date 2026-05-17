@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "notes": "Lightweight source sync manifest. Paths are relative to workspace root unless absolute.",
+  "sources": [
+    {
+      "id": "histwords_acl2016",
+      "title": "HistWords ACL 2016",
+      "domain": "lexical semantic change",
+      "status": "official examples locally verified",
+      "source_path": "语义计算/histwords",
+      "dest_path": "reproduced/lexical_semantic_change/histwords_acl2016",
+      "entrypoints": ["example.py", "reproduce_official_examples.sh", "vecanalysis/ws_eval.py"],
+      "include": ["**/*"],
+      "exclude": [".git/**", ".venv/**", "__pycache__/**", "embeddings/**", "*.npy", "*.pkl", "*.zip", ".DS_Store"]
+    },
+    {
+      "id": "scalable_semantic_shift_naacl2021",
+      "title": "Scalable and Interpretable Semantic Change Detection",
+      "domain": "contextual lexical semantic change",
+      "status": "source prepared, data external",
+      "source_path": "委婉语/语义计算/scalable_semantic_shift-master",
+      "dest_path": "reproduced/lexical_semantic_change/scalable_semantic_shift_naacl2021",
+      "entrypoints": ["build_*_corpus.py", "fine-tune_BERT.py", "get_embeddings_scalable.py", "measure_semantic_shift.py", "evaluate.py"],
+      "include": ["*.py", "*.sh", "*.md", "requirements.txt"],
+      "exclude": ["data/**", "results_demo/**", ".git/**", "__pycache__/**", ".DS_Store"]
+    },
+    {
+      "id": "tempobert_wsdm2022",
+      "title": "TempoBERT WSDM 2022",
+      "domain": "temporal language modeling and semantic change",
+      "status": "source prepared, datasets and outputs external",
+      "source_path": "委婉语/动态演化建模/tempobert",
+      "dest_path": "reproduced/temporal_models/tempobert_wsdm2022",
+      "entrypoints": ["train_tempobert.py", "semantic_change_detection.py", "quick_demo.py"],
+      "include": ["*.py", "*.md", "requirements.txt"],
+      "exclude": ["datasets/**", "output/**", "logs/**", "venv/**", ".venv/**", "__pycache__/**", ".DS_Store"]
+    },
+    {
+      "id": "lscd_benchmark",
+      "title": "LSCDBenchmark",
+      "domain": "lexical semantic change benchmark",
+      "status": "benchmark repo available, selected local runs recorded separately",
+      "source_path": "论文复现/LSCDBenchmark",
+      "dest_path": "reproduced/benchmarks/lscd_benchmark",
+      "entrypoints": ["main.py", "conf/config.yaml", "src/"],
+      "include": ["main.py", "README.md", "requirements.txt", "conf/**", "src/**", "tests/**", "docs/**", "test_*.py"],
+      "exclude": [".git/**", ".bert/**", ".wic/**", "outputs/**", "results/**", "__pycache__/**", ".DS_Store"]
+    },
+    {
+      "id": "scdisc_hplt_2026",
+      "title": "DHPLT semantic change discovery scripts",
+      "domain": "diachronic HPLT semantic change",
+      "status": "source prepared, large data external",
+      "source_path": "论文复现/papers/2026-scdisc-hplt",
+      "dest_path": "reproduced/lexical_semantic_change/scdisc_hplt_2026",
+      "entrypoints": ["src/tokenize_data.py", "src/get_contextualized_embeddings.py", "src/apd.py", "vocabulary/prepare_vocabulary.py"],
+      "include": ["README.md", "src/**", "vocabulary/**"],
+      "exclude": ["languages/**", "bert_substitutions_examples/**", "__pycache__/**", "*.pt", "*.gz", ".git/**", ".DS_Store"]
+    },
+    {
+      "id": "semantic_change_discovery_emnlp2025",
+      "title": "Semantic Change Discovery EMNLP 2025",
+      "domain": "semantic change discovery in the wild",
+      "status": "source prepared, raw datasets external",
+      "source_path": "论文复现/papers/2025-semantic-change-discovery",
+      "dest_path": "reproduced/lexical_semantic_change/semantic_change_discovery_emnlp2025",
+      "entrypoints": ["code/process_data.py", "code/get_contextualized_embeddings.py", "code/get_mlm_substitutes.py", "code/evaluate_discovery.py"],
+      "include": ["README.md", "environment*.yml", "code/**", "annotations/**"],
+      "exclude": ["data/**", "misc/**", "__pycache__/**", ".git/**", ".DS_Store"]
+    },
+    {
+      "id": "dhplt_scdisc_2026_minimal",
+      "title": "DHPLT minimal local copy",
+      "domain": "diachronic HPLT preprocessing subset",
+      "status": "minimal source subset",
+      "source_path": "论文复现/papers/2026-dhplt-scdisc",
+      "dest_path": "reproduced/lexical_semantic_change/dhplt_scdisc_2026_minimal",
+      "entrypoints": ["src/tokenize_data.py", "src/dia_distribution.py"],
+      "include": ["README.md", "src/**", "vocabulary/**"],
+      "exclude": ["__pycache__/**", ".git/**", ".DS_Store"]
+    },
+    {
+      "id": "definition_modeling_acl2023",
+      "title": "Interpretable Word Sense Representations via Definition Generation",
+      "domain": "definition generation and interpretable word sense representations",
+      "status": "source prepared; reproduction pack contains verified local runs",
+      "source_path": "论文复现/definition_modeling",
+      "dest_path": "reproduced/definition_generation/definition_modeling_acl2023",
+      "entrypoints": ["code/modeling/generate_t5.py", "code/proto_explanations/sense_label.py", "code/evaluation/"],
+      "include": ["README.md", "cuda_requirements.txt", "code/**"],
+      "exclude": [".git/**", "plots/**", "__pycache__/**", ".DS_Store"]
+    },
+    {
+      "id": "verified_reproduction_pack",
+      "title": "Verified local reproduction pack",
+      "domain": "local reproduction records and command wrappers",
+      "status": "small verified artifacts and command scripts",
+      "source_path": "论文复现/reproduction_pack",
+      "dest_path": "reproduced/verified_runs/reproduction_pack",
+      "entrypoints": ["INDEX.md", "manifest.tsv", "*/commands/*.sh", "*/commands/*.py"],
+      "include": ["**/*"],
+      "exclude": [".DS_Store", "__pycache__/**", "*.gz"]
+    },
+    {
+      "id": "copl_emnlp2025",
+      "title": "CoPL EMNLP 2025",
+      "domain": "personalized LLM preference learning",
+      "status": "source snapshot, peripheral to euphemism semantic-change work",
+      "source_path": "委婉语/论文复现/CoPL-main",
+      "dest_path": "reproduced/peripheral_llm/copl_emnlp2025",
+      "entrypoints": ["train_CoPL_gcf.py", "train_CoPL_rm.py", "unseen_user_adaptation.py", "scripts/CoPL_rm_train.sh"],
+      "include": ["README.md", "requirements.txt", "*.py", "data/**", "models/**", "scripts/**"],
+      "exclude": ["peft-main/**", ".venv39/**", "dataset/**", "logs/**", "gcf_models/**", "gcf_user_embeds/**", "__pycache__/**", ".git/**", ".DS_Store"]
+    },
+    {
+      "id": "talon_time_series_llm",
+      "title": "TALON time-series LLM forecasting",
+      "domain": "time-series forecasting with LLMs",
+      "status": "source snapshot, peripheral to euphemism semantic-change work",
+      "source_path": "委婉语/论文复现/TALON-main",
+      "dest_path": "reproduced/peripheral_llm/talon_time_series_llm",
+      "entrypoints": ["run.py", "preprocess.py", "scripts/"],
+      "include": ["README.md", "requirements.txt", "*.py", "data_provider/**", "exp/**", "layers/**", "models/**", "scripts/**", "utils/**"],
+      "exclude": ["dataset/**", "checkpoints/**", "test_results/**", "fig/**", "__pycache__/**", ".git/**", ".DS_Store"]
+    },
+    {
+      "id": "mambafcs_2026",
+      "title": "Mamba-FCS 2026",
+      "domain": "remote-sensing semantic change detection",
+      "status": "source snapshot, non-lexical SCD peripheral project",
+      "source_path": "论文复现/papers/2026-mambafcs",
+      "dest_path": "reproduced/peripheral_remote_sensing/mambafcs_2026",
+      "entrypoints": ["changedetection/script/train_MambaSCD.py", "changedetection/script/infer_MambaSCD.py"],
+      "include": ["README.md", "requirements.txt", "classification/**", "changedetection/**", "configs/**", "kernels/**", "annotations/**", "docs/**"],
+      "exclude": [".git/**", "analyze/mmpretrain_configs/**", "data/**", "datasets/**", "checkpoints/**", "outputs/**", "__pycache__/**", "*.pth", "*.pt", ".DS_Store"]
+    },
+    {
+      "id": "mambafcs_2026_v2",
+      "title": "Mamba-FCS 2026 v2",
+      "domain": "remote-sensing semantic change detection",
+      "status": "second local source snapshot, non-lexical SCD peripheral project",
+      "source_path": "论文复现/papers/2026-mambafcs-v2",
+      "dest_path": "reproduced/peripheral_remote_sensing/mambafcs_2026_v2",
+      "entrypoints": ["changedetection/script/train_MambaSCD.py", "changedetection/script/infer_MambaSCD.py"],
+      "include": ["README.md", "requirements.txt", "classification/**", "changedetection/**", "configs/**", "kernels/**", "annotations/**", "docs/**"],
+      "exclude": [".git/**", "analyze/mmpretrain_configs/**", "data/**", "datasets/**", "checkpoints/**", "outputs/**", "__pycache__/**", "*.pth", "*.pt", ".DS_Store"]
+    }
+  ]
+}

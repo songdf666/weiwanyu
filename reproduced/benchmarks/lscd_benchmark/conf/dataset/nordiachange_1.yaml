@@ -1,0 +1,144 @@
+_target_: src.dataset.Dataset
+cleaning: null
+defaults:
+- _self_
+- preprocessing: ???
+- spelling_normalization: none
+- split: ???
+exclude_annotators: []
+groupings:
+- '1929-1965'
+- '1970-2015'
+path: nor_dia_change/subset1
+standard_split:
+  dev:
+  - kjemi
+  - egg
+  - leilighet
+  - kart
+  - sete
+  - anfektelse
+  - pære
+  - bit
+  - linse
+  - husrom
+  - tro
+  - idiot
+  - landet
+  - mål
+  - gress
+  - skjerm
+  - leder
+  - ørret
+  - rev
+  - mening
+  - ris
+  - bølge
+  - formiddagen
+  - damp
+  - lyng
+  - operasjon
+  - forhold
+  - katt
+  - fil
+  - plattform
+  - kloakk
+  - varsel
+  - fag
+  - etterforskning
+  - stoff
+  - data
+  - rad
+  - horisont
+  - tropp
+  - frakk
+  dev1:
+  - forhold
+  - rad
+  - fag
+  - sete
+  - ris
+  - leilighet
+  - damp
+  - landet
+  - stoff
+  - mening
+  - bit
+  - tropp
+  - katt
+  - frakk
+  - fil
+  - operasjon
+  - horisont
+  - mål
+  - plattform
+  - husrom
+  dev2:
+  - kloakk
+  - bølge
+  - gress
+  - kjemi
+  - pære
+  - linse
+  - data
+  - varsel
+  - leder
+  - kart
+  - anfektelse
+  - egg
+  - etterforskning
+  - rev
+  - lyng
+  - skjerm
+  - idiot
+  - tro
+  - ørret
+  - formiddagen
+  full:
+  - kjemi
+  - egg
+  - leilighet
+  - kart
+  - sete
+  - anfektelse
+  - pære
+  - bit
+  - linse
+  - husrom
+  - tro
+  - idiot
+  - landet
+  - mål
+  - gress
+  - skjerm
+  - leder
+  - ørret
+  - rev
+  - mening
+  - ris
+  - bølge
+  - formiddagen
+  - damp
+  - lyng
+  - operasjon
+  - forhold
+  - katt
+  - fil
+  - plattform
+  - kloakk
+  - varsel
+  - fag
+  - etterforskning
+  - stoff
+  - data
+  - rad
+  - horisont
+  - tropp
+  - frakk
+  test: []
+test_on: null
+type: dev
+url: https://github.com/ltgoslo/nor_dia_change.git
+wic_use_pairs:
+  group: ALL
+  sample: annotated

@@ -1,0 +1,4 @@
+defaults:
+  - dm_ckpt@ckpt: ???
+  
+_target_: src.wic.DM.DMWrapperClass

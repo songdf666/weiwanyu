@@ -1,0 +1,19 @@
+_target_: src.dataset.Dataset
+cleaning: null
+defaults:
+- _self_
+- preprocessing: ???
+- spelling_normalization: ???
+- split: ???
+exclude_annotators: []
+groupings:
+- '1'
+- '2'
+type: test
+test_on: null
+path: diawug_110
+url: https://zenodo.org/record/5791193/files/diawug.zip
+
+wic_use_pairs:
+  group: ALL
+  sample: annotated

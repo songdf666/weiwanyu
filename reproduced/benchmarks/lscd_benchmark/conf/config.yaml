@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - dataset: ???
+  - task: ???
+  - evaluation: ???
+  - /hydra/callbacks:
+    - job_return_status
+    - result_collector
+  - override hydra/job_logging: custom
+
+hydra:
+  job:
+    chdir: true
+  

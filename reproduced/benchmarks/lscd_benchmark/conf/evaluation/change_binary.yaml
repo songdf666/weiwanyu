@@ -1,0 +1,6 @@
+defaults:
+  - plotter: histogram
+  - metric: f1_score
+
+_target_: src.evaluation.Evaluation
+task: change_binary
