@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "notes": "Explicit paper-to-reproducible-code mapping. Each entry separates the paper record from the copied reproducible code snapshot.",
+  "entries": [
+    {
+      "id": "histwords_acl2016",
+      "paper": {
+        "type": "paper",
+        "title": "Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change",
+        "authors": ["William L. Hamilton", "Jure Leskovec", "Dan Jurafsky"],
+        "year": "2016",
+        "venue": "ACL",
+        "official_url": "https://aclanthology.org/P16-1141/",
+        "local_pdf_candidates": ["委婉语/ACL与高分期刊/期刊文件/《历时词向量揭示语义变化的统计规律》.pdf"]
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/lexical_semantic_change/histwords_acl2016",
+        "source_path": "语义计算/histwords",
+        "status": "official examples locally verified",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "scalable_semantic_shift_naacl2021",
+      "paper": {
+        "type": "paper",
+        "title": "Scalable and Interpretable Semantic Change Detection",
+        "authors": [],
+        "year": "2021",
+        "venue": "NAACL",
+        "official_url": "https://aclanthology.org/2021.naacl-main.369/",
+        "local_pdf_candidates": ["委婉语/语义计算/2021.naacl-main.369.pdf"]
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/lexical_semantic_change/scalable_semantic_shift_naacl2021",
+        "source_path": "委婉语/语义计算/scalable_semantic_shift-master",
+        "status": "source prepared, data external",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "tempobert_wsdm2022",
+      "paper": {
+        "type": "paper",
+        "title": "Time Masking for Temporal Language Models",
+        "authors": ["Guy D. Rosin", "Ido Guy", "Kira Radinsky"],
+        "year": "2022",
+        "venue": "WSDM",
+        "official_url": "https://arxiv.org/abs/2110.06366",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/temporal_models/tempobert_wsdm2022",
+        "source_path": "委婉语/动态演化建模/tempobert",
+        "status": "source prepared, datasets and outputs external",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "lscd_benchmark",
+      "paper": {
+        "type": "paper",
+        "title": "Human and Computational Measurement of Lexical Semantic Change",
+        "authors": ["Dominik Schlechtweg"],
+        "year": "2023",
+        "venue": "PhD thesis / benchmark reference",
+        "official_url": "http://dx.doi.org/10.18419/opus-12833",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/benchmarks/lscd_benchmark",
+        "source_path": "论文复现/LSCDBenchmark",
+        "status": "benchmark repo available, selected local runs recorded separately",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "scdisc_hplt_2026",
+      "paper": {
+        "type": "paper",
+        "title": "DHPLT: large-scale multilingual diachronic corpora and word representations for semantic change modelling",
+        "authors": ["Mariia Fedorova", "Andrey Kutuzov", "Khonzoda Umarova"],
+        "year": "2026",
+        "venue": "LChange",
+        "official_url": "https://arxiv.org/abs/2602.11968",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/lexical_semantic_change/scdisc_hplt_2026",
+        "source_path": "论文复现/papers/2026-scdisc-hplt",
+        "status": "source prepared, large data external",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "semantic_change_discovery_emnlp2025",
+      "paper": {
+        "type": "paper",
+        "title": "Semantic Change Quantification Methods Struggle with Discovery in the Wild",
+        "authors": [],
+        "year": "2025",
+        "venue": "EMNLP",
+        "official_url": "https://aclanthology.org/2025.emnlp-main.1791/",
+        "local_pdf_candidates": ["论文复现/papers/2025-semantic-change-discovery/misc/slides.pdf"]
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/lexical_semantic_change/semantic_change_discovery_emnlp2025",
+        "source_path": "论文复现/papers/2025-semantic-change-discovery",
+        "status": "source prepared, raw datasets external",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "dhplt_scdisc_2026_minimal",
+      "paper": {
+        "type": "paper",
+        "title": "DHPLT: large-scale multilingual diachronic corpora and word representations for semantic change modelling",
+        "authors": ["Mariia Fedorova", "Andrey Kutuzov", "Khonzoda Umarova"],
+        "year": "2026",
+        "venue": "LChange",
+        "official_url": "https://arxiv.org/abs/2602.11968",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/lexical_semantic_change/dhplt_scdisc_2026_minimal",
+        "source_path": "论文复现/papers/2026-dhplt-scdisc",
+        "status": "minimal source subset",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "definition_modeling_acl2023",
+      "paper": {
+        "type": "paper",
+        "title": "Interpretable Word Sense Representations via Definition Generation: The Case of Semantic Change Analysis",
+        "authors": ["Mario Giulianelli", "Iris Luden", "Raquel Fernandez", "Andrey Kutuzov"],
+        "year": "2023",
+        "venue": "ACL",
+        "official_url": "https://aclanthology.org/2023.acl-long.176/",
+        "local_pdf_candidates": ["语义计算/.tmp_papers/interpretable.pdf"]
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/definition_generation/definition_modeling_acl2023",
+        "source_path": "论文复现/definition_modeling",
+        "status": "source prepared; reproduction pack contains verified local runs",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "verified_reproduction_pack",
+      "paper": {
+        "type": "paper_group",
+        "title": "Verified local reproduction pack for ACL 2023 definition generation and EACL 2024 semantic-change benchmark/tutorial",
+        "authors": [],
+        "year": "2023/2024",
+        "venue": "ACL / EACL local reproduction records",
+        "official_url": "https://aclanthology.org/2023.acl-long.176/",
+        "local_pdf_candidates": ["语义计算/.tmp_papers/tutorial_semchange.pdf"]
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/verified_runs/reproduction_pack",
+        "source_path": "论文复现/reproduction_pack",
+        "status": "small verified artifacts and command scripts",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "copl_emnlp2025",
+      "paper": {
+        "type": "paper",
+        "title": "CoPL: Collaborative Preference Learning for Personalizing LLMs",
+        "authors": [],
+        "year": "2025",
+        "venue": "EMNLP",
+        "official_url": "https://arxiv.org/abs/2503.01658",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/peripheral_llm/copl_emnlp2025",
+        "source_path": "委婉语/论文复现/CoPL-main",
+        "status": "source snapshot, peripheral to euphemism semantic-change work",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "talon_time_series_llm",
+      "paper": {
+        "type": "paper",
+        "title": "Adapting LLMs to Time Series Forecasting via Temporal Heterogeneity Modeling and Semantic Alignment",
+        "authors": [],
+        "year": "to confirm",
+        "venue": "to confirm",
+        "official_url": "",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/peripheral_llm/talon_time_series_llm",
+        "source_path": "委婉语/论文复现/TALON-main",
+        "status": "source snapshot, peripheral to euphemism semantic-change work",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "mambafcs_2026",
+      "paper": {
+        "type": "paper",
+        "title": "Joint Spatio-Frequency Feature Fusion with Change-Guided Attention and SeK Loss",
+        "authors": [],
+        "year": "2026",
+        "venue": "IEEE JSTARS",
+        "official_url": "https://doi.org/10.1109/JSTARS.2026.3663066",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/peripheral_remote_sensing/mambafcs_2026",
+        "source_path": "论文复现/papers/2026-mambafcs",
+        "status": "source snapshot, non-lexical SCD peripheral project",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    },
+    {
+      "id": "mambafcs_2026_v2",
+      "paper": {
+        "type": "paper",
+        "title": "Joint Spatio-Frequency Feature Fusion with Change-Guided Attention and SeK Loss",
+        "authors": [],
+        "year": "2026",
+        "venue": "IEEE JSTARS",
+        "official_url": "https://doi.org/10.1109/JSTARS.2026.3663066",
+        "local_pdf_candidates": []
+      },
+      "code": {
+        "type": "reproducible_code",
+        "path": "reproduced/peripheral_remote_sensing/mambafcs_2026_v2",
+        "source_path": "论文复现/papers/2026-mambafcs-v2",
+        "status": "second local source snapshot, non-lexical SCD peripheral project",
+        "correctness_scope": "source snapshot integrity, entrypoint presence, and lightweight file hygiene"
+      }
+    }
+  ]
+}

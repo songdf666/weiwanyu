@@ -4,7 +4,7 @@
 - Domain: local reproduction records and command wrappers
 - Status: small verified artifacts and command scripts
 - Original path: `论文复现/reproduction_pack`
-- Copied files: 25
+- Copied files: 28
 
 ## Entrypoints
 
@@ -18,6 +18,7 @@
 - `.DS_Store`
 - `__pycache__/**`
 - `*.gz`
+- `*.npz`
 
 ## Maintenance Note
 

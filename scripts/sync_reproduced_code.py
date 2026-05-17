@@ -42,6 +42,13 @@ def sync_source(source: dict[str, Any], source_root: Path, dest_root: Path, *, d
         print(f"SKIP missing source: {source['id']} -> {source_root}")
         return 0
 
+    preserved_files = {}
+    if dest_root.exists():
+        for filename in ("PAPER.md",):
+            existing = dest_root / filename
+            if existing.is_file():
+                preserved_files[filename] = existing.read_text(encoding="utf-8")
+
     include = source.get("include", ["**/*"])
     exclude = source.get("exclude", [])
     files = [
@@ -60,6 +67,8 @@ def sync_source(source: dict[str, Any], source_root: Path, dest_root: Path, *, d
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(file_path, target)
         (dest_root / "SOURCE_NOTE.md").write_text(_source_note(source, len(files)), encoding="utf-8")
+        for filename, content in preserved_files.items():
+            (dest_root / filename).write_text(content, encoding="utf-8")
 
     return len(files)
 
@@ -71,6 +80,8 @@ def _included(rel_path: str, include: list[str], exclude: list[str]) -> bool:
 
 
 def _match(rel_path: str, pattern: str) -> bool:
+    if pattern in {"**", "**/*"}:
+        return True
     if fnmatch.fnmatch(rel_path, pattern):
         return True
     if "/" not in pattern and fnmatch.fnmatch(Path(rel_path).name, pattern):

@@ -99,7 +99,7 @@
       "dest_path": "reproduced/verified_runs/reproduction_pack",
       "entrypoints": ["INDEX.md", "manifest.tsv", "*/commands/*.sh", "*/commands/*.py"],
       "include": ["**/*"],
-      "exclude": [".DS_Store", "__pycache__/**", "*.gz"]
+      "exclude": [".DS_Store", "__pycache__/**", "*.gz", "*.npz"]
     },
     {
       "id": "copl_emnlp2025",

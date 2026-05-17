@@ -7,6 +7,8 @@
 - `reproduced/`: 从当前工作区同步过来的轻量源码副本。数据、模型权重、运行输出、虚拟环境不会进入该目录。
 - `docs/CODE_INDEX.md`: 已复现代码索引和标注，记录原始路径、用途、入口脚本和当前状态。
 - `docs/PAPER_INDEX.md`: 每个源码目录对应的论文索引、官方链接和本地候选文件。
+- `docs/REPRODUCIBILITY_AUDIT.md`: 可复现代码快照审计结果。
+- `configs/paper_code_map.json`: 结构化论文/代码映射，显式区分 `paper` 与 `reproducible_code`。
 - `papers/`: 论文题录说明。默认不提交 PDF 全文。
 - `templates/EXPERIMENT_LOG_TEMPLATE.md`: 单次实验记录模板。
 - `scripts/preprocess_corpus.py`: 语料预处理命令行入口。
@@ -29,6 +31,12 @@ python scripts/preprocess_corpus.py \
   --input data/raw \
   --output data/processed/corpus.jsonl \
   --config configs/preprocess.default.json
+```
+
+检查论文和可复现代码是否一一对应、源码快照是否正确：
+
+```bash
+python scripts/audit_reproduced_code.py --markdown-out docs/REPRODUCIBILITY_AUDIT.md
 ```
 
 ## 管理原则
